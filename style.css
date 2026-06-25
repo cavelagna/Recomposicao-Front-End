@@ -1,0 +1,138 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#282929;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-height:100vh;
+}
+
+.container{
+    background:rgb(31, 30, 30);
+    width:700px;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 0 15px rgba(0,0,0,.15);
+}
+
+h1{
+    text-align:center;
+    color:#ffffff;
+}
+
+p{
+    text-align:center;
+    color: white;
+    margin:15px 0;
+}
+
+#plano{
+
+    width:500px;
+    height:500px;
+
+    margin:20px auto;
+
+    position:relative;
+
+    border:2px solid #2c3e50;
+
+    background-image:
+    linear-gradient(#dcdcdc 1px, transparent 1px),
+    linear-gradient(90deg,#dcdcdc 1px, transparent 1px);
+
+    background-size:50px 50px;
+}
+
+#plano::before{
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:0;
+
+    width:100%;
+    height:3px;
+
+    background:#000;
+}
+
+#plano::after{
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:3px;
+    height:100%;
+
+    background:#000;
+}
+
+.eixo-x{
+
+    color: white;
+    position:absolute;
+
+    bottom:-35px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    font-weight:bold;
+}
+
+.eixo-y{
+
+    color: white;
+
+    position:absolute;
+
+    left:-50px;
+    top:50%;
+
+    transform:translateY(-50%) rotate(-90deg);
+
+    font-weight:bold;
+}
+
+.painel{
+    margin-top:40px;
+
+    background:#141414;
+
+    padding:15px;
+
+    border-radius:10px;
+}
+
+.painel h2{
+    color: whi;
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.ponto{
+    width:12px;
+    height:12px;
+
+    background:red;
+
+    border-radius:50%;
+
+    position:absolute;
+}
